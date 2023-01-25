@@ -10,7 +10,7 @@
 
 .modal {
   position: fixed;
-  top: 10vh;
+  top: 8vh;
   left: 2.5%;
   width: 85%;
   height: 70%;
@@ -23,12 +23,18 @@
   animation: slide-down 300ms ease-out forwards;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .modal {
     top: 20vh;
     height: auto;
     width: 40rem;
     left: calc(50% - 20rem);
+  }
+}
+
+@media (min-height: 52em) {
+  .modal {
+    height: auto;
   }
 }
 
