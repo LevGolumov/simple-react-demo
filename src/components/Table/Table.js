@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { tableActions } from "../../store/store";
 import { useParams, useNavigate } from "react-router-dom";
 import NamingContext from "../../context/naming-context"
+import classes from "./Table.module.css"
 const axios = require("axios").default;
 
 function Table({ ...props }) {
@@ -141,8 +142,8 @@ function Table({ ...props }) {
   return (
     <Fragment>
       
-      <div style={{ minHeight: "75vh", margin: "0 10%" }}>
-      <table className="table">
+      <div className={ `${classes.tableWrap} ${classes["body--table"]}` }>
+      <table className={classes.table}>
         <TableHead
           headers={headers}
           sortField={sortField}

@@ -7,7 +7,7 @@ export default function Pagination({
 }) {
 
   return (
-    <div className="pagination">
+    <div className="pagination container">
       {pageNumbers.map((index) => {
         return (
             <Link key={index} to={`../table/${index}`}>

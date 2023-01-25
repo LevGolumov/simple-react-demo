@@ -1,0 +1,8 @@
+.table__head{
+    background: #1089ff;
+    color: white;
+}
+
+.table__head--name{
+    font-weight: 600;
+}

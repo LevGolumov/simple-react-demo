@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import store from "./store/store";
 import { Route, Routes, Navigate, useNavigate } from "react-router-dom";
 import NamingContext from "./context/naming-context"
-import Toggles from "./components/UI/Toggles";
+import Header from "./components/Header/Header";
 
 function App() {
   
@@ -41,7 +41,7 @@ function App() {
 
   return (
     <Provider store={store}>
-      <Toggles />
+      <Header />
       <Filter
         handleChange={handleFilteringFieldChange}
         filteringOption={filteringOption}

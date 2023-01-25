@@ -1,32 +1,23 @@
+
+body{
+  background-color: #f8f9fd;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
 p{
   margin: 0.4rem 0;
 }
 
-.table {
-  border: 1px solid #eee;
-  table-layout: fixed;
-  width: 100%;
-  margin-bottom: 20px;
+.container {
+  padding: 0 1.5rem;
 }
-
-.table th {
-  font-weight: bold;
-  padding: 5px;
-  background: #efefef;
-  border: 1px solid #dddddd;
-}
-
-.table td {
-  padding: 5px 10px;
-  text-align: left;
-}
-
-.table tbody tr:nth-child(odd) {
-  background: #fff;
-}
-
-.table tbody tr:nth-child(even) {
-  background: #f7f7f7;
+@media (min-width: 64em) {
+  .container {
+    max-width: 55rem;
+    margin: auto;
+  }
 }
 
 .sort-button {
@@ -37,7 +28,7 @@ p{
   margin: 0;
   line-height: 1;
   font-size: 15px;
-  color: black;
+  color: white;
   cursor: pointer;
   transition: transform 0.5s ease-out;
 }
@@ -47,14 +38,14 @@ p{
 }
 
 .invisible {
-  visibility: hidden;
+  display: none;
 }
 
 .pagination {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 10%;
-  max-width: 100vw;
+  /* margin: 0 10%;
+  max-width: 100vw; */
   align-items: center;
   justify-content: center;
 }

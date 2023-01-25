@@ -2,7 +2,7 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 const tableInitialState = {
   tableInfo: [],
-  linesPerPage: 20
+  linesPerPage: 15
 };
 
 const tableSlice = createSlice({

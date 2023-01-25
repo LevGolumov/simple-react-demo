@@ -2,6 +2,7 @@ import FilterSelection from "./FilterSelection";
 import FilterOption from "./FilterOption";
 import { useContext } from "react";
 import NamingContext from "../../context/naming-context";
+import classes from "./Filter.module.css"
 
 function Filter(props) {
   const namingCtx = useContext(NamingContext)
@@ -9,13 +10,13 @@ function Filter(props) {
   const filterListOptions = namingCtx.filterListOptions
 
   return (
-    <div style={{margin: '10px 0', textAlign: 'center'}}>
+    <div className={classes.filter}>
+      <span className={classes.selections}>
       <FilterSelection
       filterListOptions={headers}
         handleChoice={props.handleChoice}
         selectedOption={props.columnChoice}
       />
-      <span style={{margin: '0 10px'}}>
       <FilterSelection
         filterListOptions={filterListOptions}
         handleChoice={props.handleChoice}
