@@ -111,3 +111,12 @@ p{
 .links__icon:hover{
   fill: #0d6efd;
 }
+
+.about{
+  width: 6rem;
+}
+@media (min-width: 348px) {
+  .about {
+    width: auto;
+  }
+}

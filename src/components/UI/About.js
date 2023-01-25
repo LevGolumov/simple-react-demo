@@ -14,14 +14,14 @@ function About() {
   return (
     <Fragment>
       <button
-        className={isOpen ? "btn btn__active" : "btn"}
+        className={`${isOpen ? "btn btn__active" : "btn"} about`}
         onClick={toggleHandler}
       >
         {namingCtx.about.button}
       </button>
       {isOpen && (
         <Modal onClick={toggleHandler}>
-          <div className="about">
+          <div className="about__text">
             {namingCtx.about.text.map((item, index) => {return <p key={index}>{item}</p>})}
                         
             <span className="links">
@@ -40,7 +40,7 @@ function About() {
                 {namingCtx.about.close}
               </button>
             </span>
-            <p className="modal__ver">ver.0.2</p>
+            <p className="modal__ver">ver.0.2.2</p>
           </div>
         </Modal>
       )}
